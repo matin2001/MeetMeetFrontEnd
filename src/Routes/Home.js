@@ -27,7 +27,7 @@ const Home = () => {
             in Meet Meet, you can make different events <br />
             and join others to make plans for your freedom
           </div>
-          <button className={style.login_button1}>Join us Now</button>
+          <button className={style.login_button1} onClick={()=>navigate("/homepage")}>Join us Now</button>
         </div>
       </div>
       <div className={style.details}>
