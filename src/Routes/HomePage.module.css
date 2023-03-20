@@ -125,3 +125,7 @@
   font-size: 2em;
   padding-top: 12vh;
 }
+.navHomeIcon{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}

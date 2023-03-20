@@ -30,7 +30,7 @@ const HomePage = () => {
             position: "fixed",
             width: "100vw",
             backgroundColor: "#5B8FB9",
-            color: "#03001C"
+            color: "#03001C",
           }}
           className={style.navbar}
         >
@@ -38,10 +38,10 @@ const HomePage = () => {
             <Navbar.Brand
               href="#"
               style={{
-                fontSize: "2em",
+                fontSize: "3em",
                 marginBottom: "1vh",
                 color: "#03001C",
-                marginLeft: "5vw",
+                marginLeft: "2.5vw",
               }}
               className={style.titles}
             >
@@ -53,15 +53,17 @@ const HomePage = () => {
                 className="me-auto my-2 my-lg-0"
                 style={{ maxHeight: "100px", fontSize: "1.5em" }}
                 navbarScroll
-              >
-                <Nav.Link href="#action1" className={style.titles}>
-                  Home
-                </Nav.Link>
-              </Nav>
+              ></Nav>
               <Nav
                 style={{ marginRight: "5vh", fontSize: "1.5em" }}
                 className={style.titles}
               >
+                <span
+                  class="material-symbols-outlined"
+                  style={{ fontSize: "1.5em", marginRight: "0.3vw" }}
+                >
+                  account_circle
+                </span>
                 UserName
               </Nav>
             </Navbar.Collapse>
@@ -70,7 +72,15 @@ const HomePage = () => {
         <div className={style.PageGrid}>
           <div className={style.leftMenu}>
             <div className={style.navHome}>
-              <div>Home</div>
+              <div className={style.navHomeIcon}>
+                <span
+                  class="material-symbols-outlined"
+                  style={{ fontSize: "1.5em" }}
+                >
+                  house
+                </span>
+                <span>Home</span>
+              </div>
             </div>
             <div>
               <div className={style.navRoomTitle}>Active Rooms</div>
