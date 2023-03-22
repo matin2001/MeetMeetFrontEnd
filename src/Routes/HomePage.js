@@ -1,8 +1,11 @@
 import React, { useState } from "react";
-import { Container, Form, Nav, Navbar } from "react-bootstrap";
+import { Form } from "react-bootstrap";
 import style from "./HomePage.module.css";
+import Header from "./Header";
+import { useNavigate } from "react-router-dom";
 
 const HomePage = () => {
+  const navigate = useNavigate();
   const handleChangeSubject = (e) => {
     setSubject(e.target.value);
   };
@@ -23,52 +26,7 @@ const HomePage = () => {
   return (
     <div>
       <div className={style.page}>
-        <Navbar
-          expand="lg"
-          style={{
-            height: "10vh",
-            position: "fixed",
-            width: "100vw",
-            backgroundColor: "#5B8FB9",
-            color: "#03001C",
-          }}
-          className={style.navbar}
-        >
-          <Container fluid>
-            <Navbar.Brand
-              href="#"
-              style={{
-                fontSize: "3em",
-                marginBottom: "1vh",
-                color: "#03001C",
-                marginLeft: "2.5vw",
-              }}
-              className={style.titles}
-            >
-              Meet Meet
-            </Navbar.Brand>
-            <Navbar.Toggle aria-controls="navbarScroll" />
-            <Navbar.Collapse id="navbarScroll">
-              <Nav
-                className="me-auto my-2 my-lg-0"
-                style={{ maxHeight: "100px", fontSize: "1.5em" }}
-                navbarScroll
-              ></Nav>
-              <Nav
-                style={{ marginRight: "5vh", fontSize: "1.5em" }}
-                className={style.titles}
-              >
-                <span
-                  class="material-symbols-outlined"
-                  style={{ fontSize: "1.5em", marginRight: "0.3vw" }}
-                >
-                  account_circle
-                </span>
-                UserName
-              </Nav>
-            </Navbar.Collapse>
-          </Container>
-        </Navbar>
+        <Header />
         <div className={style.PageGrid}>
           <div className={style.leftMenu}>
             <div className={style.navHome}>
@@ -85,10 +43,10 @@ const HomePage = () => {
             <div>
               <div className={style.navRoomTitle}>Active Rooms</div>
               <div className={style.navRooms}>
-                <div className={style.navActive}>Room1</div>
-                <div className={style.navActive}>Room2</div>
-                <div className={style.navActive}>Room3</div>
-                <div className={style.navActive}>Room4</div>
+                <div className={style.navActive} onClick={()=>navigate("/room")}>Room1</div>
+                <div className={style.navActive} onClick={()=>navigate("/room")}>Room2</div>
+                <div className={style.navActive} onClick={()=>navigate("/room")}>Room3</div>
+                <div className={style.navActive} onClick={()=>navigate("/room")}>Room4</div>
               </div>
             </div>
           </div>

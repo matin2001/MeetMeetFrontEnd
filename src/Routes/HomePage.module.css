@@ -20,11 +20,15 @@
 .titles {
   color: #03001c !important;
   transition-duration: 0.3s !important;
-  cursor: pointer;
+  cursor: pointer !important;
 }
 .titles:hover {
   color: #b6eada !important;
 }
+.qqq {
+  z-index: 1000;
+}
+
 .navHome {
   height: 10vh;
   color: #b6eada;
@@ -125,7 +129,7 @@
   font-size: 2em;
   padding-top: 12vh;
 }
-.navHomeIcon{
+.navHomeIcon {
   display: grid;
   grid-template-columns: 1fr 2fr;
 }
