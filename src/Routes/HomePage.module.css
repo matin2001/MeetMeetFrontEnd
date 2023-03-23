@@ -96,14 +96,15 @@
   padding: auto;
   width: 48vw;
   margin-top: 2vh;
+  margin-left: 0.5vw;
 }
 .filterSelect {
-  width: 20vw;
-  background-color: #03001c;
-  color: #b6eada;
-  display: inline;
-  font-size: 1.2em;
-  font-weight: 600;
+  width: 20vw !important;
+  background-color: #03001c !important;
+  color: #b6eada !important;
+  display: inline !important;
+  font-size: 1.2em !important;
+  font-weight: 600 !important;
 }
 .selectTitle {
   display: inline;

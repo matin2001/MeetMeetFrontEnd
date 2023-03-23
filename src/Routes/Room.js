@@ -1,7 +1,6 @@
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Navbar, Nav } from "react-bootstrap";
 import Chat from "./components/Chat";
 import Task from "./components/Tasks";
 import Member from "./components/Members";

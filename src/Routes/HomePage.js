@@ -47,6 +47,7 @@ const HomePage = () => {
                 <div className={style.navActive} onClick={()=>navigate("/room")}>Room2</div>
                 <div className={style.navActive} onClick={()=>navigate("/room")}>Room3</div>
                 <div className={style.navActive} onClick={()=>navigate("/room")}>Room4</div>
+                <div className={style.navActive} onClick={()=>navigate("/addRoom")}>Add Rooms</div>
               </div>
             </div>
           </div>
@@ -127,7 +128,7 @@ const HomePage = () => {
                   <Form.Select
                     aria-label="Default select example"
                     className={style.filterSelect}
-                    style={{ marginLeft: "1vw" }}
+                    style={{ marginLeft: "1.1vw" }}
                     value={countOfPeople}
                     onChange={handleChangeCount}
                   >
@@ -147,7 +148,7 @@ const HomePage = () => {
                   <Form.Select
                     aria-label="Default select example"
                     className={style.filterSelect}
-                    style={{ marginLeft: "12vw" }}
+                    style={{ marginLeft: "12.25vw" }}
                     value={duration}
                     onChange={handleChangeDuration}
                   >
